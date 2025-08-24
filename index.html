@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editkaro.in | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Editkaro<span>.in</span></div>
+    <nav>
+      <ul>
+        <li><a href="#videos">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>We Edit, You Shine ✨</h1>
+    <p>Professional video editing services for brands, creators & businesses.</p>
+    <a href="#videos" class="btn">Explore Portfolio</a>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="filter-buttons">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="short">Short-form</button>
+    <button class="filter-btn" data-category="long">Long-form</button>
+    <button class="filter-btn" data-category="gaming">Gaming</button>
+    <button class="filter-btn" data-category="ads">Ads</button>
+    <button class="filter-btn" data-category="anime">Anime</button>
+  </section>
+
+  <!-- Videos Grid -->
+  <section id="videos" class="video-gallery">
+    <!-- Example Card -->
+    <div class="video-card" data-category="short">
+      <video src="assets/short1.mp4" poster="assets/thumb_short1.jpg" muted loop></video>
+      <div class="overlay">
+        <h3>Short-form Video</h3>
+      </div>
+    </div>
+
+    <div class="video-card" data-category="gaming">
+      <video src="assets/gaming1.mp4" poster="assets/thumb_gaming1.jpg" muted loop></video>
+      <div class="overlay">
+        <h3>Gaming Edit</h3>
+      </div>
+    </div>
+
+    <div class="video-card" data-category="ads">
+      <video src="assets/ad1.mp4" poster="assets/thumb_ad1.jpg" muted loop></video>
+      <div class="overlay">
+        <h3>Ad Campaign</h3>
+      </div>
+    </div>
+
+    <!-- Add more cards similarly -->
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Editkaro.in</h2>
+    <p>We are a creative video editing agency specializing in short-form, long-form, gaming, anime, and ad videos. Our mission is to make your content stand out with cinematic storytelling, professional cuts, and dynamic effects.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <p>Email us: <a href="mailto:contact@editkaro.in">contact@editkaro.in</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Editkaro.in | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

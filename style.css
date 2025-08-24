@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  background: #141414;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff4747;
+}
+header .logo span {
+  color: #fff;
+}
+header ul {
+  display: flex;
+  list-style: none;
+}
+header ul li {
+  margin-left: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+header ul li a:hover {
+  color: #ff4747;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(to right, #1a1a1a, #0f0f0f);
+}
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  margin-bottom: 2rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: #ff4747;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  text-align: center;
+  margin: 2rem 0;
+}
+.filter-btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.filter-btn:hover,
+.filter-btn.active {
+  background: #ff4747;
+}
+
+/* Video Gallery */
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+}
+.video-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #222;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+.video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+.video-card:hover video {
+  transform: scale(1.1);
+}
+.video-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+.video-card h3 {
+  font-size: 1rem;
+}
+
+/* About & Contact */
+.about, .contact {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.about h2, .contact h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #ff4747;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #141414;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
